@@ -46,7 +46,9 @@ export function BookScreen() {
             aria-label="Open the letter for you"
           >
             <span className="washi-tape -left-3 -top-2 z-10 rotate-[-9deg]" aria-hidden="true" />
-            <span className="page-number absolute bottom-1 right-3">16</span>
+            <span className="page-number absolute bottom-1 right-3">
+              {String(ILLUSTRATIONS.length + 1).padStart(2, "0")}
+            </span>
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f2e6d4] text-[#9a7f68] transition-transform group-hover:scale-105">
               <Mail size={21} strokeWidth={1.5} />
             </span>

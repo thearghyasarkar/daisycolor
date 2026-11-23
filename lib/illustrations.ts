@@ -1,4 +1,5 @@
 import type { Detail, Illustration, Region } from "./types";
+import { MORE_ILLUSTRATIONS, MORE_FRAME_ACCENTS } from "./more-illustrations";
 
 const PAPER = "#fffdf7";
 const LEAF = "#f1f5ec";
@@ -1175,6 +1176,7 @@ const CORE_ILLUSTRATIONS: Illustration[] = [
   homePerson,
   libraryCafe,
   sunflowers,
+  ...MORE_ILLUSTRATIONS,
 ];
 
 const FRAME_ACCENTS: Record<string, string> = {
@@ -1194,6 +1196,7 @@ const FRAME_ACCENTS: Record<string, string> = {
   "home-person": WARM,
   "library-cafe": "#d8c8b8",
   sunflowers: "#efd39a",
+  ...MORE_FRAME_ACCENTS,
 };
 
 export const ILLUSTRATIONS: Illustration[] = CORE_ILLUSTRATIONS.map((illustration) => ({
